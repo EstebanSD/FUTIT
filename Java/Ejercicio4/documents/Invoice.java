@@ -1,27 +1,18 @@
 package documents;
 
-public class Invoice {
+public class Invoice extends Document{
     
-    private int id;
     private int cliente;
     private String nombreCliente;
 
     // CONSTRUCTOR
     public Invoice(int id, int cliente, String nombreCliente) {
-        this.id = id;
+        setId(id);
         this.cliente = cliente;
         this.nombreCliente = nombreCliente;
     }
 
     //GETTERS AND SETTERS
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getCliente() {
         return cliente;
     }
@@ -41,6 +32,6 @@ public class Invoice {
     //Metodos Adicionales
     @Override
     public String toString (){
-        return "Factura numero: "+ id + ", del cliente: "+ cliente +", a nombre de: "+ nombreCliente;
+        return "Factura numero: "+ this.getId() + ", del cliente: "+ cliente +", a nombre de: "+ nombreCliente;
     }
 }

@@ -1,32 +1,21 @@
 package documents;
 
-public class Order {
- 
-    private int id;
+public class Order extends Document{
+
     private int cliente;
     private String producto;
 
     //CONSTRUCTORES
-    public Order() {
+    public Order(){
     }
 
     public Order(int id, int cliente, String producto) {
-        this.id = id;
+        setId(id);
         this.cliente = cliente;
         this.producto = producto;
     }
 
     //GETTERS AND SETTERS
-    public int getId() {
-        return id;
-    }
-
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
     public int getCliente() {
         return cliente;
     }
@@ -49,6 +38,6 @@ public class Order {
     //Metodos Adicionales
     @Override
     public String toString (){
-        return "Orden numero: "+ id + ", del cliente: "+ cliente +", del producto: "+ producto;
+        return "Orden numero: "+ this.getId() + ", del cliente: "+ cliente +", del producto: "+ producto;
     }  
 }

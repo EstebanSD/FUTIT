@@ -1,6 +1,8 @@
 package documents.HumanResources;
 
-public class CV {
+import documents.Document;
+
+public class CV extends Document{
     
     private String nombre;
     private String apellido;
@@ -10,7 +12,8 @@ public class CV {
     public CV(){
     }
 
-    public CV(String nombre, String apellido, String titulo) {
+    public CV(int id, String nombre, String apellido, String titulo) {
+        setId(id);
         this.nombre = nombre;
         this.apellido = apellido;
         this.titulo = titulo;
@@ -41,5 +44,9 @@ public class CV {
         this.titulo = titulo;
     }
     
-    
+    //Metodos Adicionales
+    @Override
+    public String toString (){
+        return "CV de cliente: "+ nombre +" "+ apellido + ", titulo: "+ titulo;
+    }
 }

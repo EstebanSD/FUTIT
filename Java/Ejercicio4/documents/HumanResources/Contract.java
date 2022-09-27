@@ -1,8 +1,9 @@
 package documents.HumanResources;
 
-public class Contract {
+import documents.Document;
+
+public class Contract extends Document{
         
-    private int id;
     private int comprador;
     private int vendedor;
 
@@ -11,20 +12,12 @@ public class Contract {
     }
 
     public Contract(int id, int comprador, int vendedor) {
-        this.id = id;
+        setId(id);
         this.comprador = comprador;
         this.vendedor = vendedor;
     }
 
     //GETTERS AND SETTERS
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getComprador() {
         return comprador;
     }
@@ -41,6 +34,9 @@ public class Contract {
         this.vendedor = vendedor;
     }
 
-    
-    
+    //Metodos Adicionales
+    @Override
+    public String toString (){
+        return "Contrato numero: "+ this.getId() + ", del comprador: "+ comprador +", y vendedor: "+ vendedor;
+    }
 }

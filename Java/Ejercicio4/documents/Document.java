@@ -1,0 +1,23 @@
+package documents;
+
+public class Document {
+    
+    private int id;
+
+    public Document(){
+    }
+    
+    public Document(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    
+}

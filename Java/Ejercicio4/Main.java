@@ -12,7 +12,7 @@ public class Main {
         
         System.out.println(factura1);
         System.out.println(orden1);
-        
+         
         orden1 = ordenUrgente1;
         System.out.println(orden1);
         
