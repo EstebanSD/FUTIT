@@ -152,4 +152,30 @@ export default Mostrar;
 	- import name from '../../node_modules/name/name.js'
 Dependiendo del nivel en el que estemos parados a lo mejor se necesita solo un '../'
 
+12) How do I import the following component, considering that it is inside a file
+in the same directory, called MyComponent.js?
+	- import MyComponent from './MyComponent';
+
+13) What is the error in the following component?
+	El error es que en realidad lo que se define ahi mas que un componente,
+	es un elemento jsx. 
+
+14) Explain, in your own words, what this component does
+	Es un componente de clase. Funciona como un contador de clicks, su estado inicial
+	es 1 y cada ves que alguien hace click en el boton. Su estado cambia a (+1), esto 
+	se ve reflejado en el <h1>.
+
+15) What errors do you see in the following component?
+	No se declara el contructor del componente
+
+16) How would you make a Rest API call from JavaScript?
+
+17) What is the use of the useEffect hook?
+	Se utiliza para efectos secundarios en los componentes
+
+18) How would you develop a custom hook that exposes methods to save and
+modify a counter? The hook must have a parameter that allows the
+developer to specify how much the counter should add for each call to the
+setter.
+	
 
