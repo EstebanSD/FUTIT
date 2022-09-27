@@ -8,3 +8,12 @@ fourth alert:	undefined
 alert(typedof(cuadradoDeA)) : esto arroja el tipo 'undefined' ya que en ningun momento
 	del script se define el tipo de la funcion. Esto es posible ya que javascript es
 	un lenguaje débilmente tipado. 
+
+2) Para mostrar s2 : "Hello World!", pero con todas sus letras en minuscula, podemos
+	usar la misma logica del "alert(s2.toUpperCase())", pero con una funcion que haga 
+	lo pedido. Tal es el caso de "toLowerCase()", por lo que el ejercicio quedaria
+	asi:
+
+	var s2 = "Hello World!";
+	alert(s2.toUpperCase()); <- retorna el alerta "HELLO WORLD!" 
+	alert(s2.toLowerCase()); <- retorna el alerta "hello world!"
