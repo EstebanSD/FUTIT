@@ -137,3 +137,13 @@ function ListaPersonas() {
 	);
 }
 export default ListaPersonas;
+
+10)
+import React from 'react';
+
+function Mostrar( {data} ) {
+  return(
+    <h1> {data} </h1>
+  );
+}
+export default Mostrar;
