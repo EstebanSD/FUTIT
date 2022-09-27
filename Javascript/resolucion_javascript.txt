@@ -58,3 +58,39 @@ booleano, true si se trata de una matriz diagonal o falso caso contrario.
         alert(matrizDiagonal(matriz1)); //<- retorna true
         alert(matrizDiagonal(matriz2)); //<- retorna false
 
+
+///////////////
+React Exercises
+//////////////
+
+1) What are props in a component?
+	- Are the component parameters
+	- It is a mechanism to put data inside the component
+
+2) What is a component?
+	- A function or class that returns an element
+
+3) Which of these component types are valid?
+	- Class Component
+	- Component Function
+
+4) What is the state of a component?
+	El estado de un componente es el valor o la informacion determinada que posee 
+	un componente en un momento dado de la aplicacion.
+
+5) What are the component lifecycle methods?
+
+6) How would you set the state of a component?
+	El estado de un componente se puede se puede setear o modificar
+	usando los Kook. Son funciones especiales que permiten trabajar
+	con estados en componentes funcionales.
+	En el caso de que estemos usando un componente de clase, solo tenemos
+	que hacer referencia a la propiedad "state" del componente.
+
+7) Which of these implementations change the state of a component?
+	-this.setState({ value: "my value" })
+
+8) What happens when we change the state of a component?
+	Cuando cambiamos el estado de un componente, cambia la forma o el valor de
+	lo que se muestra en este.
+
