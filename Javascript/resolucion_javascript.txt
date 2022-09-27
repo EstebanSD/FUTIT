@@ -15,8 +15,46 @@ alert(typedof(cuadradoDeA)) : esto arroja el tipo 'undefined' ya que en ningun m
 	asi:
 
 	var s2 = "Hello World!";
-	alert(s2.toUpperCase()); <- retorna el alerta "HELLO WORLD!" 
-	alert(s2.toLowerCase()); <- retorna el alerta "hello world!"
+	alert(s2.toUpperCase()); //<- retorna el alerta "HELLO WORLD!" 
+	alert(s2.toLowerCase()); //<- retorna el alerta "hello world!"
 
 3) mostrar(console.log("Openbravo!!!"));
+
+4) Una matriz es una arreglo bidimencional, el cual tiene la misma cantidad de
+columnas que de filas. Una matriz diagonal es aquella matriz cuyos elementos por arriba 
+y por debajo de la diagonal (desde arriba a la izquierda hasta abajo a la derecha) 
+son iguales a 0(cero).
+La funcion matrizDiagonal() toma como parametro un arreglo bidimencional y retorna un
+booleano, true si se trata de una matriz diagonal o falso caso contrario.
+
+	//Tomando los ejemplos del ejercicio
+	var matriz1 = [[1,0,0],[0,2,0],[0,0,3]];
+	var matriz2 = [[1,0,0],[0,2,0],[0,2,3]];
+
+	//Para este caso hay que tener en consideracion que las matrices
+	//van a ser de 3x3, por lo que:
+	var columna = 3;
+	var fila = 3;
+
+	function matrizDiagonal(arreglo){
+      	let i=0;
+            let j=0;
+
+            while(j < fila){
+                while(i < columna){
+                    if(i != j){
+                        if(arreglo[i][j] != 0){
+                            return false;
+                        }
+                    }
+                    i ++;
+                }
+                i=0;
+                j++;
+            }
+            return true;
+        }
+
+        alert(matrizDiagonal(matriz1)); //<- retorna true
+        alert(matrizDiagonal(matriz2)); //<- retorna false
 
