@@ -94,3 +94,46 @@ React Exercises
 	Cuando cambiamos el estado de un componente, cambia la forma o el valor de
 	lo que se muestra en este.
 
+9)
+import React from 'react';
+
+function Persona(props) {
+	return (
+      	<div className='contenedor-persona'>
+     			<p className='nombre-persona'>
+           			{props.nombre}
+           		</p>
+           		<p className='apellido-persona'>
+            		{props.apellido}
+            	</p>
+            	<p className='dni-persona'>
+				{props.dni}
+			</p>
+        	</div>
+	);
+}
+export default Persona;
+
+//y luego un componente que se encargue de listar las personas
+
+import React from 'react';
+
+function ListaPersonas() {
+	const lista = [{.....}] //lista de personas dada
+	
+	return (
+		<>
+              {
+                lista.map((persona) =>
+                  <Persona
+                    key={persona.id}
+                    nombre={persona.firstname}
+			  apellido={persona.lastname}
+			  dni={persona.dni}
+		      />
+                )
+              }
+		</>
+	);
+}
+export default ListaPersonas;
