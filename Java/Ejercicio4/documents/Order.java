@@ -6,7 +6,10 @@ public class Order {
     private int cliente;
     private String producto;
 
-    //CONSTRUCTOR
+    //CONSTRUCTORES
+    public Order() {
+    }
+
     public Order(int id, int cliente, String producto) {
         this.id = id;
         this.cliente = cliente;
