@@ -1,0 +1,4 @@
+1) Describe what Hibernate is and what it is used for
+	Hibernate es una herramienta que se utiliza en Java para facilitar
+	el manejo de objetos.
+
