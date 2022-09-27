@@ -47,6 +47,6 @@ public class CV extends Document{
     //Metodos Adicionales
     @Override
     public String toString (){
-        return "CV de cliente: "+ nombre +" "+ apellido + ", titulo: "+ titulo;
+        return "CV de: "+ nombre +" "+ apellido + ", titulo: "+ titulo;
     }
 }

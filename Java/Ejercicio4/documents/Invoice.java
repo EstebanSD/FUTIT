@@ -5,7 +5,10 @@ public class Invoice extends Document{
     private int cliente;
     private String nombreCliente;
 
-    // CONSTRUCTOR
+    // CONSTRUCTORES
+    public Invoice(){
+    }
+    
     public Invoice(int id, int cliente, String nombreCliente) {
         setId(id);
         this.cliente = cliente;
