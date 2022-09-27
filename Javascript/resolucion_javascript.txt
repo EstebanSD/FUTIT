@@ -1,0 +1,10 @@
+1)  
+
+first alert: 	25 
+second alert: 	81 
+third alert: 	2 
+fourth alert:	undefined 
+
+alert(typedof(cuadradoDeA)) : esto arroja el tipo 'undefined' ya que en ningun momento
+	del script se define el tipo de la funcion. Esto es posible ya que javascript es
+	un lenguaje débilmente tipado. 
