@@ -17,3 +17,6 @@ alert(typedof(cuadradoDeA)) : esto arroja el tipo 'undefined' ya que en ningun m
 	var s2 = "Hello World!";
 	alert(s2.toUpperCase()); <- retorna el alerta "HELLO WORLD!" 
 	alert(s2.toLowerCase()); <- retorna el alerta "hello world!"
+
+3) mostrar(console.log("Openbravo!!!"));
+
