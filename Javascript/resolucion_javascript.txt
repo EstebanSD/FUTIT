@@ -147,3 +147,9 @@ function Mostrar( {data} ) {
   );
 }
 export default Mostrar;
+
+11) How do you import Javascript modules installed with NPM or YARN?
+	- import name from '../../node_modules/name/name.js'
+Dependiendo del nivel en el que estemos parados a lo mejor se necesita solo un '../'
+
+
