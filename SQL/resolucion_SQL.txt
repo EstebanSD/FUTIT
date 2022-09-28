@@ -1,0 +1,8 @@
+Spupongamos que la base de datos de llama sql_futit
+
+1) Name of window with AD_Window_ID = ‘100’
+	SELECT name FROM sql_futit.ad_window 
+	WHERE AD_Window_ID=100;
+
+
+	
