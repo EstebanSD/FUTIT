@@ -1,8 +1,35 @@
 Spupongamos que la base de datos de llama sql_futit
 
 1) Name of window with AD_Window_ID = ‘100’
+
 	SELECT name FROM sql_futit.ad_window 
 	WHERE AD_Window_ID=100;
 
+2) Update window with AD_Window_ID = ‘100’ appending ‘--’ to the name of
+window with AD_Window_ID = ‘100’
 
-	
+	UPDATE sql_futit.ad_window 
+	SET name = '--' 
+	WHERE AD_Window_ID='100';
+
+3) List of all tabs in window with AD_Window_ID = ‘100’
+
+	SELECT * FROM sql_futit.ad_tab  
+	WHERE AD_Window_ID='100';
+
+4) List of tab name + field name of all tabs in AD_Window_ID = ‘100’ sorted by tab
+name and field name
+
+	SELECT ad_tab.name, ad_field.name
+	FROM sql_futit.ad_field
+	JOIN sql_futit.ad_tab
+	ON (ad_field.AD_Window_ID = 100) AND (ad_tab.AD_Window_ID = 100)
+	ORDER BY ad_tab.name, ad_field.name;
+
+5) Name and number of tabs of all windows
+
+6) List of all windows with its number of fields, sorting by number of fields starting
+by the windows with a higher number of them
+
+7) Windows with more than 5 tabs
+
